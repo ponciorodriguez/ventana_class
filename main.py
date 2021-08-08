@@ -9,7 +9,7 @@ class FrameMan(Tk):
  
     self.title("Simple Calculator.")
     self.resizable(width = 0, height = 0)
-    self.geometry("200x75")
+    self.geometry("200x200")
  
     self.result = 0
     self.createWidgets()
