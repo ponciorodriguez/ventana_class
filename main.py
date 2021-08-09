@@ -9,7 +9,7 @@ class FrameMan(Tk):
  
     self.title("Simple Calculator.")
     self.resizable(width = 0, height = 0)
-    self.geometry("200x75")
+    self.geometry("750x750")
  
     self.result = 0
     self.createWidgets()
@@ -26,8 +26,8 @@ class FrameMan(Tk):
     self.Label1.grid()
     self.Label2.grid()
  
-    self.Button1 = Button(self, text = "Dest 1", command = self.destF1)
-    self.Button2 = Button(self, text = "Dest 2", command = self.destF2)
+    self.Button1 = Button(self, text = "Dest 1", command = exit)
+    self.Button2 = Button(self, text = "Dest 2", command = exit)
     self.Button1.grid(row = 1, column = 0)
     self.Button2.grid(row = 1, column = 1)
  
