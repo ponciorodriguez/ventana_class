@@ -18,27 +18,27 @@ class FrameMan(Tk):
     """ Creamos el Frame y demas controles hijos. """
     self.myFrame1 = Frame(self)
     self.myFrame2 = Frame(self)
-    self.myFrame1.grid(row = 0, column = 0)
-    self.myFrame2.grid(row = 0, column = 1)
+    self.myFrame1.place(x = 100, y = 100)
+    self.myFrame2.place(x = 200, y = 100)
  
     self.Label1 = Label(self.myFrame1, text = "Este es el Frame 1")
     self.Label2 = Label(self.myFrame2, text = "Este es el Frame 2")
-    self.Label1.grid()
-    self.Label2.grid()
+    self.Label1.place(x = 100, y = 0)
+    self.Label2.place(x = 100, y = 0)
  
     self.Button1 = Button(self, text = "Dest 1", command = exit)
     self.Button2 = Button(self, text = "Dest 2", command = exit)
-    self.Button1.grid(row = 1, column = 0)
-    self.Button2.grid(row = 1, column = 1)
+    self.Button1.place(x = 200, y = 200)
+    self.Button2.place(x = 300, y = 200)
  
   def runApp(self):
     """ Ejecutamos la aplicacion. """
     self.mainloop()
  
-  def destF1(self):
-    self.myFrame1.destroy()
+  # def destF1(self):
+  #   self.myFrame1.destroy()
  
-  def destF2(self):
-    self.myFrame2.destroy()
+  # def destF2(self):
+  #   self.myFrame2.destroy()
  
 root = FrameMan().runApp()
